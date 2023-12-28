@@ -11,7 +11,7 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-func main(){
+func main() {
 	if len(os.Args) != 2 {
 		log.Printf("need port number\n")
 		os.Exit(1)
@@ -35,7 +35,7 @@ func run(ctx context.Context, l net.Listener) error {
 	eg, ctx := errgroup.WithContext(ctx)
 	eg.Go(func() error {
 		if err := s.Serve(l); err != nil &&
-		err != http.ErrServerClosed {
+			err != http.ErrServerClosed {
 			log.Printf("failed to close: %+v", err)
 			return err
 		}

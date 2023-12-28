@@ -29,7 +29,7 @@ func TestRun(t *testing.T) {
 		t.Errorf("failed to get: %+v", err)
 	}
 	defer rsp.Body.Close()
-	got ,err := io.ReadAll(rsp.Body)
+	got, err := io.ReadAll(rsp.Body)
 	if err != nil {
 		t.Fatalf("failed to read body: %v", err)
 	}
