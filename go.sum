@@ -8,6 +8,8 @@ github.com/bep/godartsass/v2 v2.0.0 h1:Ruht+BpBWkpmW+yAM2dkp7RSSeN0VLaTobyW0CiSP
 github.com/bep/godartsass/v2 v2.0.0/go.mod h1:AcP8QgC+OwOXEq6im0WgDRYK7scDsmZCEW62o1prQLo=
 github.com/bep/golibsass v1.1.1 h1:xkaet75ygImMYjM+FnHIT3xJn7H0xBA9UxSOJjk8Khw=
 github.com/bep/golibsass v1.1.1/go.mod h1:DL87K8Un/+pWUS75ggYv41bliGiolxzDKWJAq3eJ1MA=
+github.com/caarlos0/env/v6 v6.10.1 h1:t1mPSxNpei6M5yAeu1qtRdPAK29Nbcf/n3G7x+b3/II=
+github.com/caarlos0/env/v6 v6.10.1/go.mod h1:hvp/ryKXKipEkcuYjs9mI4bBCg+UI0Yhgm5Zu0ddvwc=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cli/safeexec v1.0.0/go.mod h1:Z/D4tTN8Vs5gXYHDCbaM1S/anmEDnJb1iW0+EJ5zx3Q=
 github.com/cli/safeexec v1.0.1 h1:e/C79PbXF4yYTN/wauC4tviMxEV13BwljGj0N9j+N00=

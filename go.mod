@@ -9,6 +9,7 @@ require (
 	github.com/bep/godartsass v1.2.0 // indirect
 	github.com/bep/godartsass/v2 v2.0.0 // indirect
 	github.com/bep/golibsass v1.1.1 // indirect
+	github.com/caarlos0/env/v6 v6.10.1 // indirect
 	github.com/cli/safeexec v1.0.1 // indirect
 	github.com/cosmtrek/air v1.49.0 // indirect
 	github.com/creack/pty v1.1.21 // indirect
