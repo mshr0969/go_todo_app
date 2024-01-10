@@ -15,6 +15,7 @@ type AddTask struct {
 	Validator *validator.Validate
 }
 
+// http.HandlerFunc型を満たす
 func (at *AddTask) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	var b struct {

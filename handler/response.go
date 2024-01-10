@@ -20,6 +20,7 @@ func RespondJson(ctx context.Context, w http.ResponseWriter, body any, status in
 		rsp := ErrResponse{
 			Message: http.StatusText(http.StatusInternalServerError),
 		}
+		// json.NewEncoder(w)でwに出力先を指定、rspをJSONにエンコードして書き込み
 		if err := json.NewEncoder(w).Encode(rsp); err != nil {
 			fmt.Printf("write error response error: %v", err)
 		}
