@@ -11,8 +11,8 @@ type ListTask struct {
 }
 
 type task struct {
-	ID entity.TaskID `json:"id"`
-	Title string `json:"title"`
+	ID     entity.TaskID     `json:"id"`
+	Title  string            `json:"title"`
 	Status entity.TaskStatus `json:"status"`
 }
 
@@ -22,8 +22,8 @@ func (lt *ListTask) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	rsp := []task{}
 	for _, t := range tasks {
 		rsp = append(rsp, task{
-			ID: t.ID,
-			Title: t.Title,
+			ID:     t.ID,
+			Title:  t.Title,
 			Status: t.Status,
 		})
 	}

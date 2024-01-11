@@ -31,7 +31,7 @@ func AssertJson(t *testing.T, want, got []byte) {
 // body: LoadFileで読みこんだ期待するデータ(want)
 func AssertResponse(t *testing.T, got *http.Response, status int, body []byte) {
 	t.Helper()
-	t.Cleanup(func() { _ = got.Body.Close()})
+	t.Cleanup(func() { _ = got.Body.Close() })
 	gb, err := io.ReadAll(got.Body)
 	if err != nil {
 		t.Fatal(err)
@@ -40,7 +40,7 @@ func AssertResponse(t *testing.T, got *http.Response, status int, body []byte) {
 		t.Fatalf("want status %d, but got %d, body: %q", status, got.StatusCode, gb)
 	}
 
-	if len(gb) == 0 && len(body) == 0{
+	if len(gb) == 0 && len(body) == 0 {
 		return
 	}
 	AssertJson(t, body, gb)
