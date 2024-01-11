@@ -8,7 +8,28 @@ services:
     environment:
       TODO_ENV: dev
       PORT: 8080
+      TODO_DB_HOST: todo-db
+      TODO_DB_PORT: 3306
+      TODO_DB_USER: todo
+      TODO_DB_PASSWORD: todo
+      TODO_DB_NAME: todo
     volumes:
-        - .:/app
+      - .:/app
     ports:
-        - "1800:8080"
+      - "18000:8080"
+    links:
+      - todo-db
+  todo-db:
+    image: mysql:latest
+    platform: linux/amd64
+    restart: always
+    environment:
+      MYSQL_USER: todo
+      MYSQL_PASSWORD: todo
+      MYSQL_ROOT_PASSWORD: todo
+      MYSQL_DATABASE: todo
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./ddl:/docker-entrypoint-initdb.d
+    ports:
+      - "33306:3306"
